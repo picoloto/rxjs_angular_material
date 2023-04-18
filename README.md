@@ -1,2 +1,3 @@
 # rxjs_angular_material
-Curso para atualização de conhecimento do rxjs
+
+Curso para atualização de conhecimento do RxJS
