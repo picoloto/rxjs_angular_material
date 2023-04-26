@@ -5,6 +5,7 @@ import { FormFieldInputComponent } from './components/form-field-input/form-fiel
 import { ProgressSpinnerComponent } from './components/progress-spinner/progress-spinner.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { DatePickerComponent } from './components/date-picker/date-picker.component';
+import { SnackbarComponent } from './components/snackbar/snackbar.component';
 
 const routes: Routes = [
   { path: 'buttonIcon', component: ButtonIconComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'progressSpinner', component: ProgressSpinnerComponent },
   { path: 'tabs', component: TabsComponent },
   { path: 'datePicker', component: DatePickerComponent },
+  { path: 'snackbar', component: SnackbarComponent },
 ];
 
 @NgModule({
