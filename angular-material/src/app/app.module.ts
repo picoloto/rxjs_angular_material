@@ -10,9 +10,10 @@ import { FormFieldInputComponent } from './form-field-input/form-field-input.com
 import { FormsModule } from '@angular/forms';
 import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
 import { TabsComponent } from './tabs/tabs.component';
+import { DatePickerComponent } from './date-picker/date-picker.component';
 
 @NgModule({
-  declarations: [AppComponent, ButtonIconComponent, FormFieldInputComponent, ProgressSpinnerComponent, TabsComponent],
+  declarations: [AppComponent, ButtonIconComponent, FormFieldInputComponent, ProgressSpinnerComponent, TabsComponent, DatePickerComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
