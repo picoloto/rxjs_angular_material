@@ -11,6 +11,11 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import {
+  MAT_DATE_LOCALE,
+  MAT_NATIVE_DATE_FORMATS,
+  MatNativeDateModule,
+} from '@angular/material/core';
 
 @NgModule({
   exports: [
@@ -25,12 +30,14 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     MatProgressBarModule,
     MatTabsModule,
     MatDatepickerModule,
+    MatNativeDateModule,
   ],
   providers: [
     {
       provide: MAT_FORM_FIELD_DEFAULT_OPTIONS,
       useValue: { floatLabel: 'always', appearance: 'outline' },
     },
+    { provide: MAT_DATE_LOCALE, useValue: 'pt-BR' },
   ],
 })
 export class MaterialModule {}
