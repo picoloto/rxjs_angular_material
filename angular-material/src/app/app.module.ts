@@ -6,19 +6,19 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { ButtonIconComponent } from './button-icon/button-icon.component';
+import { FormFieldInputComponent } from './form-field-input/form-field-input.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [	
-    AppComponent,
-      ButtonIconComponent
-   ],
+  declarations: [AppComponent, ButtonIconComponent, FormFieldInputComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
