@@ -10,6 +10,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 @NgModule({
   exports: [
@@ -23,6 +24,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatProgressSpinnerModule,
     MatProgressBarModule,
     MatTabsModule,
+    MatDatepickerModule,
   ],
   providers: [
     {
