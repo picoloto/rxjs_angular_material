@@ -12,6 +12,10 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import {
+  MAT_MOMENT_DATE_ADAPTER_OPTIONS,
+  MatMomentDateModule,
+} from '@angular/material-moment-adapter';
+import {
   MAT_DATE_LOCALE,
   MAT_NATIVE_DATE_FORMATS,
   MatNativeDateModule,
@@ -31,6 +35,7 @@ import {
     MatTabsModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatMomentDateModule,
   ],
   providers: [
     {
@@ -38,6 +43,7 @@ import {
       useValue: { floatLabel: 'always', appearance: 'outline' },
     },
     { provide: MAT_DATE_LOCALE, useValue: 'pt-BR' },
+    { provide: MAT_MOMENT_DATE_ADAPTER_OPTIONS, useValue: { useUtc: true } },
   ],
 })
 export class MaterialModule {}
