@@ -8,9 +8,11 @@ import { MaterialModule } from './material/material.module';
 import { ButtonIconComponent } from './button-icon/button-icon.component';
 import { FormFieldInputComponent } from './form-field-input/form-field-input.component';
 import { FormsModule } from '@angular/forms';
+import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 @NgModule({
-  declarations: [AppComponent, ButtonIconComponent, FormFieldInputComponent],
+  declarations: [AppComponent, ButtonIconComponent, FormFieldInputComponent, ProgressSpinnerComponent, TabsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

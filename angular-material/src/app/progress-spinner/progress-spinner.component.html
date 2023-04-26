@@ -1,0 +1,59 @@
+<h1>Progress Bar</h1>
+<mat-progress-bar
+  mode="determinate"
+  color="accent"
+  [value]="loadingPercent"></mat-progress-bar>
+<br />
+
+<mat-progress-bar
+  mode="buffer"
+  color="primary"
+  [value]="loadingPercent"></mat-progress-bar>
+<br />
+
+<mat-progress-bar mode="indeterminate" color="primary"></mat-progress-bar>
+<br />
+
+<mat-progress-bar mode="query" color="accent"></mat-progress-bar>
+<br />
+
+<h1>Loading progress waiting case</h1>
+<mat-progress-bar
+  color="primary"
+  [mode]="queryProgressMode"
+  [value]="queryValue"></mat-progress-bar>
+<br />
+
+<h1>Playback</h1>
+<mat-progress-bar
+  mode="buffer"
+  color="primary"
+  [value]="loadingPercent"
+  [bufferValue]="bufferPercent"></mat-progress-bar>
+<br />
+
+<h1>Progress Spinner</h1>
+<mat-spinner
+  color="primary"
+  mode="determinate"
+  [value]="loadingPercent"></mat-spinner>
+<br />
+
+<mat-progress-spinner
+  mode="determinate"
+  color="accent"
+  [value]="loadingPercent"></mat-progress-spinner>
+<br />
+
+<mat-progress-spinner
+  mode="indeterminate"
+  color="primary"></mat-progress-spinner>
+<br />
+
+<h1>Loading spinner waiting case</h1>
+
+<mat-progress-spinner
+  [mode]="querySpinnerMode"
+  color="primary"
+  [value]="queryValue"></mat-progress-spinner>
+<br />
