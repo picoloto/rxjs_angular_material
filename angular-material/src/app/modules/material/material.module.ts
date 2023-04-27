@@ -12,14 +12,14 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import {
+  MAT_SNACK_BAR_DEFAULT_OPTIONS,
+  MatSnackBarModule,
+} from '@angular/material/snack-bar';
+import {
   MAT_MOMENT_DATE_ADAPTER_OPTIONS,
   MatMomentDateModule,
 } from '@angular/material-moment-adapter';
-import {
-  MAT_DATE_LOCALE,
-  MAT_NATIVE_DATE_FORMATS,
-  MatNativeDateModule,
-} from '@angular/material/core';
+import { MAT_DATE_LOCALE, MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   exports: [
@@ -36,6 +36,7 @@ import {
     MatDatepickerModule,
     MatNativeDateModule,
     MatMomentDateModule,
+    MatSnackBarModule,
   ],
   providers: [
     {
@@ -44,6 +45,14 @@ import {
     },
     { provide: MAT_DATE_LOCALE, useValue: 'pt-BR' },
     { provide: MAT_MOMENT_DATE_ADAPTER_OPTIONS, useValue: { useUtc: true } },
+    {
+      provide: MAT_SNACK_BAR_DEFAULT_OPTIONS,
+      useValue: {
+        duration: 1500,
+        horizontalPosition: 'right',
+        verticalPosition: 'top',
+      },
+    },
   ],
 })
 export class MaterialModule {}

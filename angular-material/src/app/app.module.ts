@@ -13,6 +13,7 @@ import { TabsComponent } from './components/tabs/tabs.component';
 import { DatePickerComponent } from './components/date-picker/date-picker.component';
 import { SnackbarComponent } from './components/snackbar/snackbar.component';
 import { ToolbarComponent } from './shared/components/toolbar/toolbar.component';
+import { SnackbarMsgComponent } from './components/snackbar/snackbar-msg/snackbar-msg.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ToolbarComponent } from './shared/components/toolbar/toolbar.component'
     DatePickerComponent,
     SnackbarComponent,
     ToolbarComponent,
+    SnackbarMsgComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,9 @@
-<p>snackbar works!</p>
+<h1>Snackbar</h1>
+
+<button mat-stroked-button (click)="openSnackBar('aeeee deu boa!', 'show!')">
+  Simple Snackbar
+</button>
+
+<button mat-stroked-button (click)="openSnackBarRxjs()">With RxJS</button>
+
+<button mat-stroked-button (click)="openFromComp()">From component</button>
