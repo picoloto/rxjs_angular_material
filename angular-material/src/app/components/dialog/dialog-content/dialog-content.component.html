@@ -1,6 +1,12 @@
-<h1 mat-dialog-title>Delete file</h1>
-<div mat-dialog-content>Would you like to delete cat.jpeg?</div>
+<h1 mat-dialog-title>Tem certeza?</h1>
+<div mat-dialog-content>
+  Você quer abrir {{ data }}?
+  <br />
+  Essa ação não poderá ser revertida.
+</div>
 <div mat-dialog-actions>
-  <button mat-button mat-dialog-close>No</button>
-  <button mat-button mat-dialog-close cdkFocusInitial>Ok</button>
+  <button mat-button mat-dialog-close>Estou em dúvida</button>
+  <button mat-button mat-dialog-close cdkFocusInitial color="primary">
+    tenho certeza!
+  </button>
 </div>

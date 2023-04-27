@@ -3,6 +3,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "ng serve external",
+      "type": "pwa-chrome",
+      "request": "launch",
+      "preLaunchTask": "npm: start external",
+      "url": "http://localhost:4200/",
+    },
+    {
       "name": "ng serve",
       "type": "pwa-chrome",
       "request": "launch",

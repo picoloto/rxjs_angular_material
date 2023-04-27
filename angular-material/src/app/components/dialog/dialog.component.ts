@@ -15,7 +15,7 @@ export class DialogComponent {
     exitAnimationDuration: string
   ): void {
     this.dialog.open(DialogContentComponent, {
-      width: '250px',
+      data: 'Item teste',
       enterAnimationDuration,
       exitAnimationDuration,
     });
