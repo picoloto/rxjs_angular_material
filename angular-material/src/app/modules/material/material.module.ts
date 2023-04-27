@@ -11,6 +11,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatDialogModule } from '@angular/material/dialog';
+
 import {
   MAT_SNACK_BAR_DEFAULT_OPTIONS,
   MatSnackBarModule,
@@ -37,6 +39,7 @@ import { MAT_DATE_LOCALE, MatNativeDateModule } from '@angular/material/core';
     MatNativeDateModule,
     MatMomentDateModule,
     MatSnackBarModule,
+    MatDialogModule,
   ],
   providers: [
     {

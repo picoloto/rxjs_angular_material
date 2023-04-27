@@ -6,6 +6,7 @@ import { ProgressSpinnerComponent } from './components/progress-spinner/progress
 import { TabsComponent } from './components/tabs/tabs.component';
 import { DatePickerComponent } from './components/date-picker/date-picker.component';
 import { SnackbarComponent } from './components/snackbar/snackbar.component';
+import { DialogComponent } from './components/dialog/dialog.component';
 
 const routes: Routes = [
   { path: 'buttonIcon', component: ButtonIconComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'tabs', component: TabsComponent },
   { path: 'datePicker', component: DatePickerComponent },
   { path: 'snackbar', component: SnackbarComponent },
+  { path: 'dialog', component: DialogComponent },
 ];
 
 @NgModule({
